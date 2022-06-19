@@ -1,33 +1,17 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require_tree .
-
 // preload images
 var img1 = new Image();
 var img2 = new Image();
 var img3 = new Image();
 
-img1.src = "/assets/images/american_flag_hover.png";
-img2.src = "/assets/images/canadian_flag_hover.png";
-img3.src = "/assets/images/bieber_header_hover.png";
+img1.src = "assets/images/american_flag_hover.png";
+img2.src = "assets/images/canadian_flag_hover.png";
+img3.src = "assets/images/bieber_header_hover.png";
 
 // load audio
-var snd = new Audio("/assets/audios/blip.wav");
-var snd2 = new Audio("/assets/audios/blip2.wav");
-var gameOverSnd = new Audio("/assets/audios/Bieber_Never-say.mp3");
-var ohohSnd = new Audio("/assets/audios/Bieber_Oh-oh.mp3");
+var snd = new Audio("assets/audios/blip.wav");
+var snd2 = new Audio("assets/audios/blip2.wav");
+var gameOverSnd = new Audio("assets/audios/Bieber_Never-say.mp3");
+var ohohSnd = new Audio("assets/audios/Bieber_Oh-oh.mp3");
 
 // image info class
 function ImageInfo(width, height, imgReady) {
@@ -41,21 +25,21 @@ var americanPaddleImage = new Image();
 americanPaddleImage.onload = function () {
   americanPaddleInfo.imgReady = true;
 }
-americanPaddleImage.src = "/assets/images/american_paddle.png"
+americanPaddleImage.src = "assets/images/american_paddle.png"
 
 var canadianPaddleInfo = new ImageInfo(10, 78, false);
 var canadianPaddleImage = new Image();
 canadianPaddleImage.onload = function () {
   canadianPaddleInfo.imgReady = true;
 }
-canadianPaddleImage.src = "/assets/images/canadian_paddle.png"
+canadianPaddleImage.src = "assets/images/canadian_paddle.png"
 
 var bieberHeadInfo = new ImageInfo(50, 78, false);
 var bieberHeadImage = new Image();
 bieberHeadImage.onload = function () {
   bieberHeadImage.imgReady = true;
 }
-bieberHeadImage.src = "/assets/images/BieberHead-natural.png"
+bieberHeadImage.src = "assets/images/BieberHead-natural.png"
 
 var renderHighscores = function (data) {
   var stage = $('#stage');
