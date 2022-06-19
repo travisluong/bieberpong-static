@@ -1,0 +1,144 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #00ffff;
+$pink: #ff00ff;
+$red: #ff0000;
+$green: #00ff00;
+$yellow: #ffff00;
+$white: #ffffff;
+canvas {
+  margin: auto;
+  display: block;
+}
+#stage {
+  width: 783px;
+  margin: 20px auto;
+  #instructions {
+    text-align: center;
+    width: 550px;
+    margin: 150px auto;
+  }
+  #slogan {
+    width: 700px;
+    margin: 80px auto 70px;
+    text-align: center;
+    font-family: 'brandon_grotesquebold';
+    color: $yellow;
+    letter-spacing: 10px;
+    span {
+      color: $red;
+      font-family: 'colors_of_autumnregular';
+    }
+  }
+  #choose-team {
+    text-align: center;
+    color: $blue;
+    margin: 40px 0 50px;
+    font-size: 32px;
+  }
+  #team-selection {
+    width: 783px;
+    #usa {
+      margin-left: 134px;
+      a {
+        display: block;
+        width: 190px;
+        height: 124px;
+        background: asset-url('american_flag.png');
+        &:hover {
+          cursor: pointer;
+          background: asset-url('american_flag_hover.png');
+        }
+      }
+    }
+    #canada {
+      a {
+        display: block;
+        width: 190px;
+        height: 124px;
+        background: asset-url('canadian_flag.png');
+        &:hover {
+          cursor: pointer;
+          background: asset-url('canadian_flag_hover.png');
+        }
+      }
+    }
+    div {
+      float: left;
+
+    }
+    #vs {
+      margin: 50px 45px;
+      font-family: 'colors_of_autumnregular';
+      color: $green;
+    }
+  }
+  #game-over {
+    margin: 30px;
+    color: $red;
+    text-align: center;
+  }
+  #game-over-message {
+    text-align: center;
+  }
+  #game-over-score {
+    color: $yellow;
+    margin: 30px;
+    text-align: center;
+  }
+  #game-over-name {
+    color: $blue;
+    margin: 30px;
+    text-align: center;
+    input[type=text] {
+      border: 2px solid $blue;
+      background: none;
+      color: $yellow;
+      padding: 5px;
+      font-family: 'minecraft_peregular';
+      outline: none;
+    }
+    input[type=submit] {
+      font-family: 'minecraft_peregular';
+      color: $blue;
+      background: none;
+      border: none;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+  #saving {
+    text-align: center;
+  }
+  #submit {
+    input[type=text] {
+      font-family: 'brandon_grotesquebold';
+      font-size: 24px;
+      color: $white;
+      text-transform: uppercase;
+    }
+    input[type=submit] {
+      font-size: 24px;
+      cursor: pointer;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+#stage.game-on {
+  border: 4px solid $blue;
+  width: 600px;
+  height: 400px;
+  background: #000;
+}
+
+#play-again-button {
+  margin: 30px;
+  text-align: center;
+  a {
+    cursor: pointer;
+  }
+}

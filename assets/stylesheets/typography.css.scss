@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'colors_of_autumnregular';
+  src: asset-url('autumn-webfont.eot');
+  src: asset-url('autumn-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('autumn-webfont.woff') format('woff'),
+  asset-url('autumn-webfont.ttf') format('truetype'),
+  asset-url('autumn-webfont.svg#colors_of_autumnregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'brandon_grotesquebold';
+  src: asset-url('brandon_bld-webfont.eot');
+  src: asset-url('brandon_bld-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('brandon_bld-webfont.woff') format('woff'),
+  asset-url('brandon_bld-webfont.ttf') format('truetype'),
+  asset-url('brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'minecraft_peregular';
+  src: asset-url('minecraftpe-webfont.eot');
+  src: asset-url('minecraftpe-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-url('minecraftpe-webfont.woff') format('woff'),
+  asset-url('minecraftpe-webfont.ttf') format('truetype'),
+  asset-url('minecraftpe-webfont.svg#minecraft_peregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}

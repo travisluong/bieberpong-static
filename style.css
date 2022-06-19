@@ -1,0 +1,317 @@
+canvas {
+    margin: auto;
+    display: block;
+}
+
+#stage {
+    width: 783px;
+    margin: 20px auto;
+}
+
+#stage #instructions {
+    text-align: center;
+    width: 550px;
+    margin: 150px auto;
+}
+
+#stage #slogan {
+    width: 700px;
+    margin: 80px auto 70px;
+    text-align: center;
+    font-family: 'brandon_grotesquebold';
+    color: #ffff00;
+    letter-spacing: 10px;
+}
+
+#stage #slogan span {
+    color: #ff0000;
+    font-family: 'colors_of_autumnregular';
+}
+
+#stage #choose-team {
+    text-align: center;
+    color: #00ffff;
+    margin: 40px 0 50px;
+    font-size: 32px;
+}
+
+#stage #team-selection {
+    width: 783px;
+}
+
+#stage #team-selection #usa {
+    margin-left: 134px;
+}
+
+#stage #team-selection #usa a {
+    display: block;
+    width: 190px;
+    height: 124px;
+    background: url('/assets/images/american_flag.png');
+}
+
+#stage #team-selection #usa a:hover {
+    cursor: pointer;
+    background: url('/assets/images/american_flag_hover.png');
+}
+
+#stage #team-selection #canada a {
+    display: block;
+    width: 190px;
+    height: 124px;
+    background: url('/assets/images/canadian_flag.png');
+}
+
+#stage #team-selection #canada a:hover {
+    cursor: pointer;
+    background: url('/assets/images/canadian_flag_hover.png');
+}
+
+#stage #team-selection div {
+    float: left;
+}
+
+#stage #team-selection #vs {
+    margin: 50px 45px;
+    font-family: 'colors_of_autumnregular';
+    color: #00ff00;
+}
+
+#stage #game-over {
+    margin: 30px;
+    color: #ff0000;
+    text-align: center;
+}
+
+#stage #game-over-message {
+    text-align: center;
+}
+
+#stage #game-over-score {
+    color: #ffff00;
+    margin: 30px;
+    text-align: center;
+}
+
+#stage #game-over-name {
+    color: #00ffff;
+    margin: 30px;
+    text-align: center;
+}
+
+#stage #game-over-name input[type=text] {
+    border: 2px solid #00ffff;
+    background: none;
+    color: #ffff00;
+    padding: 5px;
+    font-family: 'minecraft_peregular';
+    outline: none;
+}
+
+#stage #game-over-name input[type=submit] {
+    font-family: 'minecraft_peregular';
+    color: #00ffff;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#stage #saving {
+    text-align: center;
+}
+
+#stage #submit input[type=text] {
+    font-family: 'brandon_grotesquebold';
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#stage #submit input[type=submit] {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#stage #submit input[type=submit]:hover {
+    color: #ffff00;
+}
+
+#stage.game-on {
+    border: 4px solid #00ffff;
+    width: 600px;
+    height: 400px;
+    background: #000;
+}
+
+#play-again-button {
+    margin: 30px;
+    text-align: center;
+}
+
+#play-again-button a {
+    cursor: pointer;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'minecraft_peregular';
+    text-transform: uppercase;
+    font-size: 24px;
+    background: url('/assets/images/space.jpg');
+    background-attachment: fixed;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+h1 {
+    color: #ff00ff;
+    text-align: center;
+}
+
+h1 span {
+    color: #00ff00;
+    font-family: "colors_of_autumnregular";
+}
+
+a:hover {
+    color: #fff;
+}
+
+.cfx:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#header {
+    height: 251px;
+    width: 783px;
+    margin: 40px auto -20px;
+}
+
+#header a {
+    margin-left: 25px;
+    width: 758px;
+    height: 223px;
+    display: block;
+    background: url('/assets/images/bieber_header.png');
+    background-repeat: no-repeat;
+}
+
+#header a:hover {
+    background: url('/assets/images/bieber_header_hover.png');
+}
+
+#content {
+    width: 783px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.twitter-share-button {
+    position: relative !important;
+    top: 6px;
+    right: 50px;
+}
+
+#footer {
+    height: 2.5%;
+    background: #ff00ff;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    vertical-align: middle;
+    font-family: "brandon_grotesquebold", Arial, serif;
+    font-size: 10px;
+    font-weight: 0px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: text-middle;
+    width: 100%;
+    letter-spacing: 1.7px;
+}
+
+#footer a {
+    color: #ffff00;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer strong {
+    color: #ffff00;
+}
+
+#high-scores {
+    width: 783px;
+    margin: 50px auto 200px;
+}
+
+#high-scores table {
+    width: 100%;
+}
+
+#high-scores table th {
+    color: #ff00ff;
+}
+
+#high-scores table td {
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+}
+
+#high-scores table tr td:first-child {
+    color: #ffff00;
+}
+
+#high-scores #games-played {
+    text-align: center;
+    margin: 30px;
+}
+
+#scores {
+    width: 600px;
+    border: 1px solid #FFF;
+}
+
+#scores table {
+    width: 100%;
+}
+
+#scores-nav {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'colors_of_autumnregular';
+    src: url('/assets/fonts/autumn-webfont.eot');
+    src: url('/assets/fonts/autumn-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/autumn-webfont.woff') format('woff'), url('/assets/fonts/autumn-webfont.ttf') format('truetype'), url('/assets/fonts/autumn-webfont.svg#colors_of_autumnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('/assets/fonts/brandon_bld-webfont.eot');
+    src: url('/assets/fonts/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/brandon_bld-webfont.woff') format('woff'), url('/assets/fonts/brandon_bld-webfont.ttf') format('truetype'), url('/assets/fonts/brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'minecraft_peregular';
+    src: url('/assets/fonts/minecraftpe-webfont.eot');
+    src: url('/assets/fonts/minecraftpe-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/minecraftpe-webfont.woff') format('woff'), url('/assets/fonts/minecraftpe-webfont.ttf') format('truetype'), url('/assets/fonts/minecraftpe-webfont.svg#minecraft_peregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

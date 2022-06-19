@@ -1,0 +1,137 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #00ffff;
+$pink: #ff00ff;
+$red: #ff0000;
+$green: #00ff00;
+$yellow: #ffff00;
+$white: #ffffff;
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'minecraft_peregular';
+  text-transform: uppercase;
+  font-size: 24px;
+  background: asset-url('space.jpg');
+  background-attachment: fixed;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+}
+
+h1 {
+  color: $pink;
+  text-align: center;
+  span {
+    color: $green;
+    font-family: "colors_of_autumnregular"
+  }
+}
+
+a:hover {
+  color: #fff;
+}
+
+.cfx:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#header {
+  height: 251px;
+  width: 783px;
+  margin: 40px auto -20px;
+  a {
+    margin-left: 25px;
+    width: 758px;
+    height: 223px;
+    display: block;
+    background: asset-url('bieber_header.png');
+    background-repeat: no-repeat;
+    &:hover {
+      background: asset-url('bieber_header_hover.png');
+    }
+  }
+}
+
+#content {
+  width: 783px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.twitter-share-button {
+  position: relative !important;
+  top: 6px;
+  right: 50px;
+}
+
+#footer {
+    height:2.5%;
+    background:#ff00ff;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    vertical-align:middle;
+
+  font-family: "brandon_grotesquebold", Arial, serif;
+  font-size: 10px;
+  font-weight:0px;
+  color: #FFF;
+  text-transform:uppercase;
+  text-align: center;
+  vertical-align:text-middle;
+  width: 100%;
+  letter-spacing:1.7px;
+  a {
+    color: $yellow;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  strong {
+    color: $yellow;
+  }
+}
+
+#high-scores {
+  width: 783px;
+  margin: 50px auto 200px;
+  table {
+    width: 100%;
+    th {
+      color: $pink;
+    }
+    td {
+      color: $white;
+      text-align: center;
+      width: 200px;
+    }
+    tr {
+      td:first-child {
+        color: $yellow;
+      }
+    }
+  }
+  #games-played {
+    text-align: center;
+    margin: 30px;
+  }
+}
+#scores {
+  width: 600px;
+  border: 1px solid #FFF;
+  table {
+    width: 100%;
+  }
+}
+#scores-nav {
+  text-align: center;
+}
+
