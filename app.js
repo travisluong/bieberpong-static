@@ -1,4 +1,3 @@
-require("dotenv").config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -21,11 +20,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const BASE_PATH = process.env.BASE_PATH;
-
-app.use(BASE_PATH + '/', indexRouter);
-app.use(BASE_PATH + '/users', usersRouter);
-app.use(BASE_PATH + '/scores', scoresRouter);
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/scores', scoresRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
