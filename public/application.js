@@ -46,7 +46,7 @@ var renderHighscores = function (data) {
   stage.empty();
   stage.removeClass('game-on');
   var highScoresDiv = $('#high-scores');
-  highScoresDiv.append('<div id="games-played">Games Played: ' + data.count + '</div>')
+  highScoresDiv.append('<div id="games-played">Games Played: ' + data.length + '</div>')
   var table = $('<table>');
   var thead = '<thead><tr><th>Rank</th><th>Name</th><th>Country</th><th>Score</th></tr></thead>';
   var tbody = $('<tbody>');
@@ -54,13 +54,14 @@ var renderHighscores = function (data) {
   table.append(tbody);
   highScoresDiv.append(table);
   html = ""
-  for (var i = 0; i < data.highscores.length; i++) {
+  for (var i = 0; i < data.length; i++) {
+    var d = data[i];
     rank = i + 1;
     html += '<tr>';
     html += '<td>' + rank + '</td>'
-    html += '<td>' + data.highscores[i].name + '</td>';
-    html += '<td>' + data.highscores[i].country + '</td>';
-    html += '<td>' + data.highscores[i].score + '</td>';
+    html += '<td>' + d.name + '</td>';
+    html += '<td>' + d.country + '</td>';
+    html += '<td>' + d.score + '</td>';
     html += '</tr>';
   }
   tbody.append(html);
@@ -102,7 +103,7 @@ var endGame = function (score, country) {
       alert("Name must be less than 12 characters.")
       return;
     }
-    var highscore = {
+    var data = {
       name: name,
       score: score,
       country: country
@@ -110,8 +111,8 @@ var endGame = function (score, country) {
     $.ajax({
       dataType: 'json',
       type: 'POST',
-      url: 'game/create_highscore',
-      data: { highscore: highscore }
+      url: 'scores',
+      data: data
     }).done(function (data) {
       renderHighscores(data);
       // window.location = "/scores"
