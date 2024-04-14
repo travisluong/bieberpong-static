@@ -19,7 +19,6 @@ router.post('/', async (req, res) => {
     if (error) throw error;
     conn.query("select * from scores order by score desc, created_at desc", function (error, results, fields) {
       if (error) throw error;
-      console.log(results);
       res.send(results)
       conn.end();
     })
@@ -32,7 +31,6 @@ router.get('/', async (req, res) => {
 
   conn.query("select * from scores order by created_at desc", function (error, results, fields) {
     if (error) throw error;
-    console.log(results);
     res.send(results)
   })
 
